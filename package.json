@@ -1,0 +1,28 @@
+{
+  "name": "entrega-2.1",
+  "version": "1.0.0",
+  "description": "debounce app",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudioMartinH/entrega-2.1.git"
+  },
+  "keywords": [
+    "debounce",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Claudio Martin Herranz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudioMartinH/entrega-2.1/issues"
+  },
+  "homepage": "https://github.com/ClaudioMartinH/entrega-2.1#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "vitest": "^1.6.0"
+  }
+}
