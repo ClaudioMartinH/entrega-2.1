@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de llibres</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module">
+        import { busqueda } from "./dist/index.js"
+        import { debounce } from "./dist/debounce.js"
+        import { llibres } from "./dist/llibres.js"
+    </script>
+</head>
+<body>
+    <header class="encabezado">Bienvenidos al buscador de libros de la ITAcademy</header>
+    <div>
+    <p>
+    <textarea
+          title="Introduce aqui el nombre del libro o el de su autor"
+          id="textUs"
+          type="text"
+          columns="30"
+          rows="2"
+          placeholder="Escribe aquí"
+        ></textarea>
+    </p>
+</div>
+    <footer><a href="https://github.com/ClaudioMartinH/ITAcademy-Especialitzacio-NodeJS">Claudio Martin Herranz 2024</a> || <a href="https://itacademy.barcelonactiva.cat/login/index.php">ITAcademy Barcelona Activa</a>    
+    </footer>
+</body>
+</html>
