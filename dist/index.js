@@ -10,12 +10,13 @@ function busqueda(textUs) {
 }
 exports.busqueda = busqueda;
 function makeSearch() {
+    let results = [];
     let textUs = "";
     let text = document.getElementById("textUs");
     if (text !== null && text.value.trim() !== "") {
         textUs = text.value.trim();
-        const results = busqueda(textUs);
-        console.log(results);
+        results = busqueda(textUs);
     }
+    return results;
 }
 exports.makeSearch = makeSearch;

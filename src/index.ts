@@ -10,14 +10,15 @@ export function busqueda(textUs: string): Llibre[] {
   });
 }
 
-export function makeSearch(): void {
+export function makeSearch(): Llibre[] {
+  let results: Llibre[] = [];
   let textUs: string = "";
   let text: HTMLInputElement | null = document.getElementById(
     "textUs"
   ) as HTMLInputElement;
   if (text !== null && text.value.trim() !== "") {
     textUs = text.value.trim();
-    const results = busqueda(textUs);
-    console.log(results)
+    results = busqueda(textUs);
   }
+  return results;
 }

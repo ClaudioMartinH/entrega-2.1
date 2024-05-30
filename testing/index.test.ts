@@ -1,14 +1,10 @@
 import { busqueda, makeSearch } from "../src";
 import { llibres, Llibre } from "../src/llibres";
-import { describe, test, expect, vitest } from "vitest";
+import { describe, test, expect, vitest, it } from "vitest";
 import documentMock from "node:test";
-import { text } from "stream/consumers";
 
-describe("Buscador de libros por texto", () => {
-  test("Should get text from textarea", () => {
-   
-  });
-  test("El libro que busca el usuario", () => {
+describe("Book search", () => {
+  test("Should return the book the user's searching", () => {
     expect(
       busqueda("El señor de los anillos. La comunidad del anillo")
     ).toEqual([
