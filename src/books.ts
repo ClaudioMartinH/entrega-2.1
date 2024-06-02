@@ -1,4 +1,4 @@
-export interface Llibre {
+export interface Book {
   nom: string;
   autor: string;
   any: number;
@@ -6,7 +6,7 @@ export interface Llibre {
   genere: string;
 }
 
-export const llibres: Llibre[] = [
+export const books: Book[] = [
   {
     nom: "El señor de los anillos. La comunidad del anillo",
     autor: "J.R.R. Tolkien",

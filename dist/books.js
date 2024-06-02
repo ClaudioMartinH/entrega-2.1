@@ -1,4 +1,4 @@
-export const llibres = [
+export const books = [
     {
         nom: "El señor de los anillos. La comunidad del anillo",
         autor: "J.R.R. Tolkien",

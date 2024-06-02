@@ -1,5 +1,5 @@
 import { mainSearch } from "../src/code";
-import { describe, test, expect, vitest, it } from "vitest";
+import { describe, test, expect } from "vitest";
 import documentMock from "node:test";
 
 describe("Book search", () => {

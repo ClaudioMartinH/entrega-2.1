@@ -1,27 +1,27 @@
-import { llibres } from "./llibres.js";
+import { books } from "./books.js";
 export function mainSearch(textUs) {
-    return llibres.filter((llibre) => {
-        return (llibre.nom.toLowerCase().includes(textUs.toLowerCase()) ||
-            llibre.autor.toLowerCase().includes(textUs.toLowerCase()));
+    return books.filter((book) => {
+        return (book.nom.toLowerCase().includes(textUs.toLowerCase()) ||
+            book.autor.toLowerCase().includes(textUs.toLowerCase()));
     });
 }
-export function showResults(llibres) {
+export function showResults(books) {
     const showBooksDiv = document.getElementById("showBooks");
     if (showBooksDiv) {
         showBooksDiv.innerHTML = "";
-        if (llibres.length === 0) {
-            showBooksDiv.innerHTML = "No s'han trobat resultats";
+        if (books.length === 0) {
+            showBooksDiv.innerHTML = "No se han encontrado resultados";
         }
-        const list = document.createElement("ul");
-        llibres.forEach((llibre) => {
-            const listItem = document.createElement("li");
-            listItem.innerText = `${llibre.nom} - ${llibre.autor} - ${llibre.any} - ${llibre.preu} € - ${llibre.genere}`;
-            list.appendChild(listItem);
+        const container = document.createElement("div");
+        books.forEach((llibre) => {
+            const divBooks = document.createElement("div");
+            divBooks.innerText = `${llibre.nom} - ${llibre.autor} - ${llibre.any} - ${llibre.preu} € - ${llibre.genere}`;
+            container.appendChild(divBooks);
         });
-        showBooksDiv.appendChild(list);
+        showBooksDiv.appendChild(container);
     }
 }
 export function searchBooks(textUs) {
-    const llibres = mainSearch(textUs);
-    showResults(llibres);
+    const books = mainSearch(textUs);
+    showResults(books);
 }
