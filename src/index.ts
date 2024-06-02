@@ -4,7 +4,7 @@ import { searchBooks } from "./code.js";
 
 const textArea = document.getElementById("textUs") as HTMLTextAreaElement
 
-const debouncedSearch = debounce(searchBooks, 1000);
+export const debouncedSearch = debounce(searchBooks, 1000);
 
 
 if (textArea) {

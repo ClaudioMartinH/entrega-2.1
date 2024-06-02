@@ -1,6 +1,7 @@
+import { mock } from "node:test";
 import { mainSearch } from "../src/code";
-import { describe, test, expect } from "vitest";
-import documentMock from "node:test";
+import { debounce } from "../src/debounce";
+import { describe, test, expect, vitest, beforeEach, vi } from "vitest";
 
 describe("Book search", () => {
   test("Should return the book the user's searching", () => {
@@ -15,5 +16,19 @@ describe("Book search", () => {
         genere: "Fantasia",
       },
     ]);
+  });
+});
+
+describe("Debounced search", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+  });
+  test("Should delay the search", async () => {
+    const mainSearchMock = vi.fn();
+    const debouncedSearch = debounce(mainSearchMock, 1000);
+    debouncedSearch("El señor de los anillos. La comunidad del anillo");
+    expect(mainSearchMock).not.toHaveBeenCalled();
+    vitest.runAllTimers();
+    expect(mainSearchMock).toHaveBeenCalled();
   });
 });
