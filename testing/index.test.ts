@@ -1,12 +1,11 @@
-import { busqueda, makeSearch } from "../src";
-import { llibres, Llibre } from "../src/llibres";
+import { mainSearch } from "../src/code";
 import { describe, test, expect, vitest, it } from "vitest";
 import documentMock from "node:test";
 
 describe("Book search", () => {
   test("Should return the book the user's searching", () => {
     expect(
-      busqueda("El señor de los anillos. La comunidad del anillo")
+      mainSearch("El señor de los anillos. La comunidad del anillo")
     ).toEqual([
       {
         nom: "El señor de los anillos. La comunidad del anillo",

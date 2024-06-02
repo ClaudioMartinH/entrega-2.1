@@ -1,9 +1,9 @@
 body {
-    background-image: url(../img/pexels-emily-252615-768125.jpg);
-    background-size: cover;
+  background-image: url(./img/pexels-emily-252615-768125.jpg);
+  background-size: cover;
 }
 .encabezado {
-background: rgba(0, 0, 0, 0.616);
+  background: rgba(0, 0, 0, 0.616);
   color: azure;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: xx-large;
@@ -16,60 +16,83 @@ background: rgba(0, 0, 0, 0.616);
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 5px;
   width: auto;
   margin: auto;
   padding: auto;
 }
 p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: small;
-    font-style: normal;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  div {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  font-style: normal;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+   border-radius: 5px;
+}
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+   border-radius: 5px;
+}
 textarea {
-    width: 250px;
-    height: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-    text-align: start;
-    margin-top: 1px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: rgba(240, 255, 255, 0.492);
-  }
-  textarea:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(36, 36, 36, 0.5);
-  }
-  textarea:hover {
-    outline: none;
-    box-shadow: 0 0 5px rgba(36, 36, 36, 0.5);
-  }
+  width: 250px;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  text-align: start;
+  margin-top: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(240, 255, 255, 0.492);
+   border-radius: 5px;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(36, 36, 36, 0.5);
+}
+textarea:hover {
+  outline: none;
+  box-shadow: 0 0 5px rgba(36, 36, 36, 0.5);
+}
+.container {
+  background: rgba(81, 207, 117, 0.616);
+  color: azure;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+   border-radius: 5px;
+  width: auto;
+  margin: auto;
+  padding: auto;
+}
 footer {
-    background: rgba(0, 0, 0, 0.616);
+  background: rgba(0, 0, 0, 0.616);
   color: azure;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: small;
@@ -85,5 +108,4 @@ footer {
   width: auto;
   margin: auto;
   padding: auto;
-
 }

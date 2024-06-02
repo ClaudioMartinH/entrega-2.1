@@ -1,22 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.makeSearch = exports.busqueda = void 0;
-const llibres_1 = require("./llibres");
-function busqueda(textUs) {
-    return llibres_1.llibres.filter((llibre) => {
-        return (llibre.nom.toLowerCase().includes(textUs.toLowerCase()) ||
-            llibre.autor.toLowerCase().includes(textUs.toLowerCase()));
+import { debounce } from "./debounce.js";
+import { searchBooks } from "./code.js";
+const textArea = document.getElementById("textUs");
+const debouncedSearch = debounce(searchBooks, 1000);
+if (textArea) {
+    textArea.addEventListener("input", (event) => {
+        const input = event.target;
+        debouncedSearch(input.value);
     });
 }
-exports.busqueda = busqueda;
-function makeSearch() {
-    let results = [];
-    let textUs = "";
-    let text = document.getElementById("textUs");
-    if (text !== null && text.value.trim() !== "") {
-        textUs = text.value.trim();
-        results = busqueda(textUs);
-    }
-    return results;
-}
-exports.makeSearch = makeSearch;

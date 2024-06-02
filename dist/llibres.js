@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.llibres = void 0;
-exports.llibres = [
+export const llibres = [
     {
         nom: "El señor de los anillos. La comunidad del anillo",
         autor: "J.R.R. Tolkien",
@@ -20,7 +17,7 @@ exports.llibres = [
         nom: "El visitante",
         autor: "Stephen King",
         any: 2018,
-        preu: 20.5,
+        preu: 20.75,
         genere: "Horror",
     },
     {
@@ -34,14 +31,14 @@ exports.llibres = [
         nom: "La teoría del todo: El origen y el destino del universo",
         autor: "Stephen Hawking",
         any: 2002,
-        preu: 20.80,
+        preu: 20.85,
         genere: "Divulgativo",
     },
     {
         nom: "Olimpia",
         autor: "Laura Mas",
         any: 2022,
-        preu: 0,
+        preu: 17.75,
         genere: "Ficción",
     }
 ];

@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "debounce app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "vitest",
     "cli": "node ./dist/appCLI.js",
-    "server": "node ./server.mjs"
+    "server": "node ./server.js"
   },
   "repository": {
     "type": "git",

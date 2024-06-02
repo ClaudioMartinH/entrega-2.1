@@ -1,24 +1,15 @@
-import { llibres, Llibre } from "./llibres";
-//import { debounce } from "./debounce";
+import { debounce } from "./debounce.js";
+import { searchBooks } from "./code.js";
 
-export function busqueda(textUs: string): Llibre[] {
-  return llibres.filter((llibre) => {
-    return (
-      llibre.nom.toLowerCase().includes(textUs.toLowerCase()) ||
-      llibre.autor.toLowerCase().includes(textUs.toLowerCase())
-    );
+
+const textArea = document.getElementById("textUs") as HTMLTextAreaElement
+
+const debouncedSearch = debounce(searchBooks, 1000);
+
+
+if (textArea) {
+  textArea.addEventListener("input", (event) =>{
+    const input = event.target as HTMLTextAreaElement;
+    debouncedSearch(input.value);
   });
-}
-
-export function makeSearch(): Llibre[] {
-  let results: Llibre[] = [];
-  let textUs: string = "";
-  let text: HTMLInputElement | null = document.getElementById(
-    "textUs"
-  ) as HTMLInputElement;
-  if (text !== null && text.value.trim() !== "") {
-    textUs = text.value.trim();
-    results = busqueda(textUs);
-  }
-  return results;
 }
