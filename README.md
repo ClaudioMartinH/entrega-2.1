@@ -1,30 +1,18 @@
 # entrega-2.1
 entrega sprint 2.1 funció debounce
 
-Una funció debounce és una tècnica per controlar la freqüència d'execució d'una funció en resposta a esdeveniments com ara clics, desplaçaments o altres accions de l'usuari. L'objectiu d'aquesta funció és evitar que s'executi massa ràpida i repetidament, sobretot quan els esdeveniments es produeixen amb molta freqüència. 
+La entrega consiste en una aplicación que simula un buscador de libros en una tienda de libros.
+La función debounce hace que cada vez que el usuario presione una tecla ejecute la función mainSearch, pero en intervalos de 1 segundo, para optimizar recursos de memoria del equipo.
 
-Bàsicament, la funció debounce retarda l'execució fins que ha transcorregut un cert temps sense que es produeixi cap altre esdeveniment. 
+1. el archivo principal del proyecto es index.ts, autotranspilado a index.js, el archivo donde se han guardado los libros es books.ts
+2. el archivo para ejecutar la app en la consola es appCLI.js que viene autotanspilado de appCLI.ts
+3. el archivo de testing con vitest es index.test.ts en la carpeta testing
 
-En aquesta tasca has d'implementar una funció debounce. La funció ha de ser implementada utilitzant TypeScript i TDD.
+- Para ejecutar el proyecto hay que copiarse el repositorio y bajarselo o bien acudir a la release 1.0.0 y descargarse el zip, tener **NodeJS** instalado en el ordenador.
 
-- Nivell 1
+- Se necesita asimismo instalar **typescript, vitest, chalk y express**, sus dependencias y la carpeta node_modules aque he decidido incluirla en el archivo .gitignore para facilitar su descarga al ser más ligera la aplicación de esta forma; Se puede hacer ejecutando el comando en consola:
+"npm install" teniendo el editor de codigo abierto en la carpeta donde hayamos bajado el repositorio.
 
-Fes servir tests per comprovar la funcionalitat de la funció debounce.
-
-- Nivell 2
-
-Crea una CLI per comprovar la funcionalitat de la funció debounce.
-
-- Nivell 3
-
-Crea un front-end per comprovar la funcionalitat de la funció debounce.
-
-
-- Objectius
-Aprendre i practicar conceptes clau de JavaScript com ara funcions de retorn, closures, temporitzadors, objectes i mètodes, així com el maneig de comportament asíncron.
-Durada: 3 diesLliurament:
-- Crea un sol repositori per a l'exercici, i envia l'URL perquè sigui revisat.
-
-- Fes servir com a soport el README.md per escriure les indicacions per executar els scripts.
-
-- Fes ús de CI (Integració Continua) amb GitHub actions.
+- Para ejecutar el testing basta con ejecutar el comando: **"npm run test"**
+- Para usar las funcionalidades CLI de la misma hay que ejecutar el siguiente comando desde consola: **"npm run cli"** 
+- Para levantar el servidor en el puerto 3000 del localhost y ejecutar el frontend basta con entrar desde consola y ejecutar el comando: **"node server.js"** y posteriormente hacer click en este link: http://localhost:5000/index.html .
