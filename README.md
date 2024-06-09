@@ -15,4 +15,4 @@ La función debounce hace que cada vez que el usuario presione una tecla ejecute
 
 - Para ejecutar el testing basta con ejecutar el comando: **"npm run test"**
 - Para usar las funcionalidades CLI de la misma hay que ejecutar el siguiente comando desde consola: **"npm run cli"** 
-- Para levantar el servidor en el puerto 3000 del localhost y ejecutar el frontend basta con entrar desde consola y ejecutar el comando: **"node server.js"** y posteriormente hacer click en este link: http://localhost:5000/index.html .
+- Para levantar el servidor en el puerto 5000 del localhost y ejecutar el frontend basta con entrar desde consola y ejecutar el comando: **"node server.js"** y posteriormente hacer click en este link: http://localhost:5000/index.html .
